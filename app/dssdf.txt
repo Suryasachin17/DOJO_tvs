@@ -1,0 +1,128 @@
+{
+    "Safety_training": [
+        {
+            "Remarks": None,
+            "actual_score": 50,
+            "cc_no": 13012,
+            "si_no": 1,
+            "sign_by_trainee": "air",
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "About Lucas TVS (Customers/Products/Policies)"
+        },
+        {
+            "Remarks": None,
+            "actual_score": 99,
+            "cc_no": 13012,
+            "si_no": 2,
+            "sign_by_trainee": None,
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "Work Discipline (including Uniform, Working Safety Shoes, Attendance/Discipline, Shift Times, Punctuality)"
+        },
+        {
+            "Remarks": None,
+            "actual_score": None,
+            "cc_no": 13012,
+            "si_no": 3,
+            "sign_by_trainee": None,
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "Industrial Safety Training"
+        },
+        {
+            "Remarks": None,
+            "actual_score": None,
+            "cc_no": 13012,
+            "si_no": 4,
+            "sign_by_trainee": None,
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "Awareness of Quality"
+        },
+        {
+            "Remarks": None,
+            "actual_score": None,
+            "cc_no": 13012,
+            "si_no": 5,
+            "sign_by_trainee": None,
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "SOP - Standard Operating Procedure (System Followed by Operations)"
+        },
+        {
+            "Remarks": None,
+            "actual_score": None,
+            "cc_no": 13012,
+            "si_no": 6,
+            "sign_by_trainee": None,
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "5 S & 3M Practices"
+        },
+        {
+            "Remarks": None,
+            "actual_score": None,
+            "cc_no": 13012,
+            "si_no": 7,
+            "sign_by_trainee": None,
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "OHSAS & EMS"
+        },
+        {
+            "Remarks": None,
+            "actual_score": None,
+            "cc_no": 13012,
+            "si_no": 8,
+            "sign_by_trainee": None,
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "Product Knowledge (Basic Level)"
+        },
+        {
+            "Remarks": None,
+            "actual_score": None,
+            "cc_no": 13012,
+            "si_no": 9,
+            "sign_by_trainee": None,
+            "sign_by_training_officer": None,
+            "status_": None,
+            "topics": "Fire Safety & Electrical Safety"
+        }
+    ],
+    "Cycle_games": [
+        
+        {
+            "task_id": "1", #1 to 10
+            "attempts": [
+            { "attempt_number": 1, "pf_status": None, "mistakes": None, "cycle_time": None },
+            { "attempt_number": 2, "pf_status": None, "mistakes": None, "cycle_time": None },
+            { "attempt_number": 3, "pf_status": None, "mistakes": None, "cycle_time": None },
+            { "attempt_number": 4, "pf_status": None, "mistakes": None, "cycle_time": None },
+            { "attempt_number": 5, "pf_status": None, "mistakes": None, "cycle_time": None }
+            ],
+            "status": None
+        }
+   
+ 
+    ],
+    "bio": [
+        {
+            "branch": "EEE",
+            "cc_no": 13012,
+            "college_name": "vels",
+            "date_of_joining": "Fri, 12 May 2023 00:00:00 GMT",
+            "designation": "Boss",
+            "grade": "A+",
+            "name_": "Surya",
+            "photo": "base file",
+            "qualification": "BE",
+            "si_no": 1,
+            "year_passed_out": 2019
+        }
+    ],
+    "cc_no": 13012,
+    "message": "Registration and examine details fetched.",
+    "status": "Sucessfully fetched two table"
+} #task_id, attempt_number, pf_status, mistakes
