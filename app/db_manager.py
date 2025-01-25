@@ -14,6 +14,8 @@ class DBManager:
         )
         if self.db:
             logger.info("DB Connected Succesfully")
+        else:
+            logger.info("DB Connected not connected Succesfully")
     
     # def execute_query(self, query, params=None):
     #     """Executes a query with optional parameters."""
@@ -30,30 +32,36 @@ class DBManager:
     #     return results
             
     def execute_query(self, query, params=None):
-            """Executes a query with optional parameters."""
-
+        """Executes a query with optional parameters."""
+        try:
             self.db.commit()  # Ensure changes are committed before fetching data
             cursor = self.db.cursor(dictionary=True, buffered=False)
-            print(query, params, "check to what going ------------------------ database")
+            # print(query, params, "check to what going ------------------------ database")
             cursor.execute(query, params)
             results = cursor.fetchall()
-            print(results, "^^^^^^^^^^^^^^^^^^^^^^^^ execute_query^^^^^^^^^^^^^^^^^^^^^^^^^")
+            # print(results, "^^^^^^^^^^^^^^^^^^^^^^^^ execute_query^^^^^^^^^^^^^^^^^^^^^^^^^")
             cursor.close()
             logger.info("execute_query: Query executed successfully")
             return results
-
+        except Exception as e:
+            logger.info(f"Error in executing query: {query} with params {params}, error: {e}")
+            return []
             
     
     def execute_non_query(self, query, params=None):
         """Executes a query that does not return results (e.g., INSERT/UPDATE)."""
-        cursor = self.db.cursor()
-        cursor.execute(query, params)
-        
-        print("execute_non _query                INSERT")
-        self.db.commit()
-        cursor.close()
-        logger.info(" execute_non_query : Query executed successfully")
-        
+        try:
+            cursor = self.db.cursor()
+            cursor.execute(query, params)
+            
+            print("execute_non _query                INSERT")
+            self.db.commit()
+            cursor.close()
+            logger.info(" execute_non_query : Query executed successfully")
+        except Exception as e:
+            logger.info(f"Error in executing non-query: {query} with params {params}, error: {e}")
+            
+            
     def close_connection(self):
         """Closes the database connection."""
         self.db.close()
